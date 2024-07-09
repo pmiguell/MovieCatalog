@@ -1,0 +1,39 @@
+.card {
+  background-color: #1a1a1a;
+  width: 14rem;
+  height: 26rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem 0.75rem;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card img {
+  width: 215px;
+  height: 275px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h3 {
+  color: #ddd;
+}
+
+.card p {
+  color: #ffc400;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.card:hover {
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}

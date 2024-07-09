@@ -1,0 +1,13 @@
+.poster {
+  width: 350px;
+  height: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media (max-width: 470px) {
+  .poster {
+    width: 280px;
+    height: 350px;
+  }
+}

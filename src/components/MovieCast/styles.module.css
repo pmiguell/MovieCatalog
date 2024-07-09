@@ -1,0 +1,28 @@
+.cast {
+  margin-top: 3rem;
+}
+
+.cast_member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #d4d4d4;
+}
+
+.cast_member img {
+  width: 150px;
+  height: 225px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.cast_member p {
+ margin: 0.5rem 0;
+ text-align: center;
+}
+
+@media (max-width: 470px) {
+  .cast {
+    width: 60%;
+  }
+}
