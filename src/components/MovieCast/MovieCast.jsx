@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css'; // Importe os estilos principais do Swiper
+import 'swiper/swiper-bundle.css';
 import style from './styles.module.css';
 
 export default function MovieCast({ cast }) {
