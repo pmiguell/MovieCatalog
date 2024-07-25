@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import style from "./styles.module.css";
-import MoviePoster from "../MoviePoster/MoviePoster";
-import MovieInfo from "../MovieInfo/MovieInfo";
-import StreamingProviders from "../StreamingProviders/StreamingProviders";
-import MovieSynopsis from "../MovieSynopsis/MovieSynopsis";
-import MovieCast from "../MovieCast/MovieCast";
+import MoviePoster from "../../components/MoviePoster/MoviePoster";
+import MovieInfo from "../../components/MovieInfo/MovieInfo";
+import StreamingProviders from "../../components/StreamingProviders/StreamingProviders";
+import MovieSynopsis from "../../components/MovieSynopsis/MovieSynopsis";
+import MovieCast from "../../components/MovieCast/MovieCast";
 
 const apiKey = import.meta.env.VITE_API_KEY;
 
