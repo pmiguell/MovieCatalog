@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import Navigation from "../components/Navigation/Navigation";
 import CardsContainer from "../components/CardsContainer/CardsContainer";
+import UserContext from "../contexts/UserContext";
 
 const apiKey = import.meta.env.VITE_API_KEY;
 
@@ -24,8 +25,7 @@ export default function Home() {
   const [movies, setMovies] = useState([]);
   const [selectedGenre, setSelectedGenre] = useState(null);
   const [genreName, setGenreName] = useState("");
-  const [searchTerm, setSearchTerm] = useState("");
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { searchTerm, isMenuOpen, setIsMenuOpen } = useContext(UserContext);
 
   useEffect(() => {
     fetchMovies(selectedGenre, searchTerm)
@@ -39,18 +39,8 @@ export default function Home() {
 
   const handleGenreChange = (genreId, genreName) => {
     setSelectedGenre(genreId);
-    setSearchTerm("");
     setGenreName(genreName);
     setIsMenuOpen(false);
-  };
-
-  const handleSearchChange = (event) => {
-    setSearchTerm(event.target.value);
-    setSelectedGenre(null);
-  };
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
   };
 
   let title;
