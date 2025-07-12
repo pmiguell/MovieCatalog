@@ -1,0 +1,41 @@
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 2rem;
+}
+
+nav ul li {
+  background-color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  border-radius: 15px;
+  flex-basis: 6rem;
+  text-align: center;
+  padding: 0.6rem;
+  cursor: pointer;
+  color: #ddd;
+}
+
+nav ul li:hover {
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+@media (max-width: 570px) {
+  .nav_hidden {
+    display: none;
+  }
+
+  .nav_visible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a;
+  }
+
+  .nav_visible li {
+    background-color: #272727;
+  }
+}

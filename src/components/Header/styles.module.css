@@ -1,0 +1,82 @@
+.highlight {
+  color: #ffc400;
+}
+
+.menu_icon {
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+.menu_icon img {
+  width: 25px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem 1rem 2rem;
+  background-color: #1a1a1a;
+}
+
+header h1 {
+  color: #ddd;
+}
+
+header input {
+  background-color: transparent;
+  border: 1px solid gray;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: #ddd;
+}
+
+header input::placeholder {
+  color: #ddd;
+}
+
+.searchIcon {
+  color: #ddd;
+}
+
+.searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  padding-left: 35px; /* Espaço para o ícone dentro do input */
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px; /* Ajuste a posição conforme necessário */
+  pointer-events: none; /* Faz o ícone não interferir nas interações com o input */
+  font-size: 17px; /* Ajuste o tamanho do ícone */
+  color: #ddd; /* Cor do ícone */
+}
+
+.homeLink {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 570px) {
+  .menu_icon {
+    display: flex;
+  }
+
+  .left {
+    flex-direction: column;
+    align-items: start;
+  }
+}

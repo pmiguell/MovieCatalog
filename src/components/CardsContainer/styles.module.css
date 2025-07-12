@@ -1,0 +1,10 @@
+.cards {
+  margin: 4rem auto;
+  width: 90%;
+}
+
+.no_results {
+  color: #ddd;
+  text-align: center;
+  font-size: 20px;
+}

@@ -1,0 +1,39 @@
+.details {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  margin-top: 6rem;
+  color: #cfcfcf;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.info {
+  width: 50%;
+}
+
+.info h2 {
+  font-size: 35px;
+  line-height: 2.5rem;
+  color: #cfcfcf;
+}
+
+@media (max-width: 950px) {
+  .details {
+    flex-direction: column;
+    align-items: start;
+    padding-left: 2rem;
+  }
+
+  .info {
+    width: 75%;
+  }
+}
+
+@media (max-width: 470px) {
+  .info {
+    width: 90%;
+  }
+}
